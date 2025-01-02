@@ -1,0 +1,77 @@
+.layer {
+	--oy: auto;
+	--pc: center;
+	--ad: 1.5s;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: var(--oy);
+
+	&.fix {
+		--oy: hidden;
+	}
+
+	&.center {
+		display: grid;
+		place-content: var(--pc);
+	}
+
+	&.middle {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&.nwp {
+		animation: var(--ad) cubic-bezier(0.25, 1, 0.3, 1) layerCircleIn both;
+		animation-delay: 0.4s;
+	}
+}
+
+.layer {
+	transition:
+		transform var(--layer-dur, 0.5s) ease-in-out var(--layer-del, 0s),
+		opacity 0.3s ease 0.1s;
+
+	&.top {
+		--layer-del: 0.1s;
+		transform: translate(0, -100%);
+		opacity: 0;
+	}
+
+	&.bottom {
+		--layer-del: 0.1s;
+		transform: translate(0, 100%);
+		opacity: 0;
+	}
+
+	&.left {
+		--layer-del: 0.1s;
+		transform: translate(-100%, 0);
+		opacity: 0;
+	}
+
+	&.right {
+		--layer-del: 0.1s;
+		transform: translate(100%, 0);
+		opacity: 0;
+	}
+
+	&.active {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+
+@keyframes layerCircleIn {
+	from {
+		clip-path: circle(0%);
+	}
+
+	to {
+		clip-path: circle(125%);
+	}
+}

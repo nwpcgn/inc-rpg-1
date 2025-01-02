@@ -1,0 +1,51 @@
+.rpg-main {
+	display: grid;
+	overflow: hidden;
+
+	> * {
+		grid-row: 1;
+		grid-column: 1;
+	}
+
+	.rpg-container {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: min-content 1fr min-content;
+		gap: 2px 2px;
+		grid-auto-flow: row;
+		grid-template-areas:
+			'aside-1 main-1'
+			'aside-2 main-1'
+			'aside-3 main-1';
+
+		> * {
+			position: relative;
+			overflow: hidden;
+			border: 1px dashed var(--sky-500);
+		}
+
+		.aside-1 {
+			grid-area: aside-1;
+		}
+
+		.aside-2 {
+			grid-area: aside-2;
+			display: grid;
+
+			> * {
+				grid-row: 1;
+				grid-column: 1;
+				overflow-y: auto;
+				overflow-x: hidden;
+			}
+		}
+
+		.aside-3 {
+			grid-area: aside-3;
+		}
+
+		.main-1 {
+			grid-area: main-1;
+		}
+	}
+}

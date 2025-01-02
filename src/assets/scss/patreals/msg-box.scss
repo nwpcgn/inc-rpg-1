@@ -1,0 +1,63 @@
+#messages {
+	border-bottom: 1px solid #ccc;
+	height: 200px;
+	overflow-y: auto;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	margin-top: var(--spacing);
+}
+
+.info {
+	color: blue;
+}
+
+.error {
+	color: red;
+}
+
+.arena-container {
+	display: grid;
+	grid-template-columns: 1fr 2.5fr 1fr;
+	grid-template-rows: 1fr;
+	grid-auto-columns: 1fr;
+	grid-auto-flow: row;
+	grid-template-areas: 'area1 area2 area3';
+	width: 920px;
+	height: 420px;
+	gap: var(--spacing);
+	padding: var(--spacing-sm);
+	max-width: 100%;
+
+	> * {
+		position: relative;
+		border: 1px dotted #ad2121;
+	}
+
+	.area1 {
+		grid-area: area1;
+	}
+
+	.area2 {
+		grid-area: area2;
+	}
+
+	.area3 {
+		grid-area: area3;
+	}
+
+	.top {
+		grid-area: top;
+	}
+
+	.bottom {
+		grid-area: bottom;
+	}
+
+	.arena2 {
+		border: 1px dotted red;
+		position: relative;
+	}
+}

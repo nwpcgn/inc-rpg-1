@@ -1,0 +1,23 @@
+@use 'base';
+@use 'vars';
+@use 'patreals/main';
+@use 'patreals/layer';
+@use 'patreals/content';
+@use 'patreals/svg-icon';
+@use 'patreals/img-grid';
+@use 'patreals/rpg-grid';
+@use 'patreals/util';
+
+// @use 'patreals/spinner';
+
+.sign-form {
+	width: 360px;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	padding: var(--spacing-lg);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	grid-row: 1;
+	grid-column: 1;
+}
