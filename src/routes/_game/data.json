@@ -1,0 +1,79 @@
+[
+	{
+		"name": "Start",
+		"href": "/rpg",
+		"icon": "rpg-start",
+		"image": "rpg-build1",
+		"hidden": false,
+		"page": {
+			"header": "Willkommen to RPG!",
+			"body": "Dies ist ein Open-Source-Projekt mit dem Ziel, das BESTE inkrementelle Spiel der Welt aller Zeiten zu entwickeln!"
+		}
+	},
+	{
+		"name": "Resourcen",
+		"href": "/rpg/res",
+		"icon": "rpg-res",
+		"image": "rpg-build2",
+		"hidden": false,
+		"page": {
+			"header": "Resourcen",
+			"body": "Um mit dem Bau Ihrer Stadt zu beginnen, klicken Sie auf Holz hacken, Steine abbauen und Nahrung sammeln, um die entsprechenden Ressourcen zu sammeln."
+		}
+	},
+	{
+		"name": "Storage",
+		"href": "/rpg/store",
+		"icon": "rpg-build",
+		"image": "rpg-build3",
+		"hidden": false,
+		"page": {
+			"header": "Resourcen Lage",
+			"body": "Baue Lagerhäuser, um mehr Ressourcen zu lagern."
+		}
+	},
+	{
+		"name": "Buildings",
+		"href": "/rpg/build",
+		"icon": "rpg-buildings",
+		"image": "rpg-build4",
+		"hidden": false,
+		"page": {
+			"header": "Nutzen Sie die gesammelten Ressourcen, um Unterkünfte zu bauen, damit Sie Arbeiter einstellen können.",
+			"body": "Einige Gebäude müssen erforscht werden, bevor Sie sie bauen können."
+		}
+	},
+	{
+		"name": "Worker",
+		"href": "/rpg/work",
+		"icon": "rpg-worker",
+		"image": "rpg-build5",
+		"hidden": false,
+		"page": {
+			"header": "Workers",
+			"body": "Klicken Sie auf die Schaltflächen unten, um Arbeiter zu erstellen, die Ressourcen für Sie sammeln. Sie benötigen jedoch zunächst einen Ort, an dem sie leben können."
+		}
+	},
+	{
+		"name": "Upgrades",
+		"href": "/rpg/upgrades",
+		"icon": "rpg-upgrades",
+		"image": "rpg-build6",
+		"hidden": false,
+		"page": {
+			"header": "Upgrades",
+			"body": "Klicken Sie auf die Schaltflächen unten, um Ubgrades zu erwerben.."
+		}
+	},
+	{
+		"name": "Settings",
+		"href": "/rpg/settings",
+		"icon": "rpg-settings",
+		"image": "rpg-build7",
+		"hidden": false,
+		"page": {
+			"header": "Settings",
+			"body": "Klicken Sie auf die Schaltflächen unten, um Ubgrades zu erwerben.."
+		}
+	}
+]

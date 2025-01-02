@@ -144,7 +144,7 @@
 				Brand
 			</a>
 			<!-- Mobile trigger -->
-			<button
+			<a href="/game" use:link
 				class="visible relative order-10 block h-10 w-10 self-center opacity-100"
 				aria-expanded="false"
 				aria-label="Toggle navigation">
@@ -163,7 +163,7 @@
 						class="absolute block h-0.5 w-1/2 origin-top-left translate-y-2 transform rounded-full bg-slate-900 transition-all duration-300"
 					></span>
 				</div>
-			</button>
+			</a>
 		</nav>
 	</div>
 </header>
@@ -171,6 +171,5 @@
 <main class="main">
 	<Router {routes} />
 </main>
-
 
 <Sprites></Sprites>

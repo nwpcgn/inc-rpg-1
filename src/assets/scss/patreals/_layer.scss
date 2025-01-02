@@ -27,7 +27,7 @@
 
 	&.nwp {
 		animation: var(--ad) cubic-bezier(0.25, 1, 0.3, 1) layerCircleIn both;
-		animation-delay: 0.4s;
+		animation-delay: var(--del, 0.4s);
 	}
 }
 

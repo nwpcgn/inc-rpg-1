@@ -191,7 +191,7 @@ class Building {
 	total = $state(0)
 	residents = $state(0)
 	cost: Cost = $state({})
-	costIncrease = $state(0)
+	costIncrease = $state(1.1)
 	constructor(slug, name, description, total, residents, cost, costIncrease) {
 		this.slug = slug
 		this.name = name
