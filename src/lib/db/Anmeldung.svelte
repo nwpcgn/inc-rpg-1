@@ -84,7 +84,7 @@
 
 <section class="layer center nwp">
 	<div
-		class="flex aspect-square h-96 w-96 flex-col gap-2 overflow-hidden rounded-box shadow-xl">
+		class="rounded-box flex aspect-square h-96 w-96 flex-col gap-2 overflow-hidden shadow-xl">
 		<ul class="steps">
 			{#each items as { label, value, icon }}
 				<li class="step" class:step-info={current >= value}>

@@ -25,7 +25,7 @@
 					class="content"
 					style="--page-width: 420px;"
 					transition:fade={{ duration: 400 }}>
-					<div class="w-full rounded-box bg-base-100 shadow-xl">
+					<div class="rounded-box bg-base-100 w-full shadow-xl">
 						<form onsubmit={submitForm} class="flex flex-col gap-4 p-8">
 							<h2 class="text-center text-xl font-extrabold">Anmelden</h2>
 							<input
@@ -50,7 +50,7 @@
 				class="layer nwp middle"
 				transition:fly={{ y: 200, duration: 2000 }}>
 				<article class="content" style="--page-width: 460px;">
-					<div class="w-full rounded-box bg-base-100 shadow-xl">
+					<div class="rounded-box bg-base-100 w-full shadow-xl">
 						<div class="flex flex-col gap-4 p-8">
 							<h2 class="text-center text-xl font-extrabold">User Panel</h2>
 							<input

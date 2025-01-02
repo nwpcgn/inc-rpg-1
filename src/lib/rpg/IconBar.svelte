@@ -10,12 +10,14 @@
 		><use xlink:href="#{name}"></use></svg>
 {/snippet}
 {#snippet menuT()}
-	<nav class="grid divide-y divide-slate-100 border-b border-slate-100" class:h-full={secondary}>
+	<nav
+		class="grid divide-y divide-slate-100 border-b border-slate-100"
+		class:h-full={secondary}>
 		{#each menu as { name, href, icon, image }}
 			{#if secondary}
 				<a
 					{href}
-					class="grid place-content-center transition-colors duration-200 delay-100 ease-in relative overflow-hidden"
+					class="relative grid place-content-center overflow-hidden transition-colors delay-100 duration-200 ease-in"
 					class:bg-blue-500={current === href}>
 					<span class="sr-only">{name}</span>
 					{@render icon2T(image)}
@@ -23,7 +25,7 @@
 			{:else}
 				<a
 					{href}
-					class="flex items-center gap-4 px-4 py-3 transition-colors duration-300 ease-in relative overflow-hidden"
+					class="relative flex items-center gap-4 overflow-hidden px-4 py-3 transition-colors duration-300 ease-in"
 					class:bg-slate-200={current === href}>
 					<span class="text-emerald-500">{@render iconT(icon)}</span>
 					<span class="font-medium">{name}</span>
