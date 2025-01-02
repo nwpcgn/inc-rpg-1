@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Sprites from './lib/rpg/sprites.svelte'
 	import Router from 'svelte-spa-router'
 	import { link } from 'svelte-spa-router'
 	import Start from './routes/Start.svelte'
@@ -13,7 +14,7 @@
 	}
 </script>
 
-<div class="border-b border-slate-200 bg-slate-100">
+<header class="border-b border-slate-200 bg-slate-100">
 	<div
 		class="mx-auto grid w-full max-w-full grid-cols-4 gap-6 px-6 py-2 text-sm text-slate-500 md:grid-cols-8 lg:max-w-5xl lg:grid-cols-12 xl:max-w-7xl 2xl:max-w-[96rem]">
 		<div class="col-span-2 items-center md:col-span-4 lg:col-span-6">
@@ -105,7 +106,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</header>
 
 <header
 	class="relative z-20 w-full border-b border-slate-200 bg-white/90 shadow-lg shadow-slate-700/5 after:absolute after:left-0 after:top-full after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden">
@@ -170,3 +171,6 @@
 <main class="main">
 	<Router {routes} />
 </main>
+
+
+<Sprites></Sprites>
